@@ -1,0 +1,237 @@
+/* Media Query File (media.css) */
+
+/* media query for nav-bar only  */
+@media (max-width: 1200px) {
+  .nav .nav-bar .nav-mode{
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .nav .nav-bar .nav-menu-icon{
+    display: block;
+  }
+  .nav .nav-bar .nav-links .menu-close{
+    display: block;
+    text-align: right;
+  }
+  .nav .nav-bar .nav-links .menu-close a{
+    font-size: 25px;
+  }
+  .nav .nav-bar .nav-links{
+    position: fixed;
+    width: 350px;
+    top: 0;
+    right: -350px; /* Start off-screen */
+    height: 100vh;
+    background-color: var(--color-default);
+    transition: right var(--transition-time);
+  }
+  .nav .nav-bar .nav-links.active{
+    right: 0;
+  }
+  .nav .nav-bar .nav-links ul{
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .nav .nav-bar .nav-links ul li{
+    padding: 20px 30px;
+  }
+}
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+    #home .home-all {
+      flex-direction: column;
+      align-items: center;
+    }
+    #home .home-all .home-caption {
+      width: 100%;
+      text-align: center;
+    }
+    #home .home-all .home-image {
+      width: 100%;
+      margin-top: 30px;
+      order: -1;
+    }
+    #chefs .chefs-all .chefs-cards .chefs-cards-card {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    #gallery .gallery-all .gallery-photos {
+      flex-direction: column;
+      height: auto;
+    }
+    #gallery .gallery-all .gallery-photos .gallery-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #contact .contact-all .contact-details div {
+      width: 100%;
+    }
+    .footer .footer-all {
+      flex-direction: column;
+      text-align: left;
+    }
+    .footer .footer-all :is(.footer-about, .footer-contact) {
+      width: 100%;
+    }
+    .footer .footer-all .footer-Subscribe {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .footer .footer-all .footer-Subscribe .footer-Subscribe-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer-all .footer-Subscribe {
+        width: 100%;
+    }
+    .footer .footer-all .footer-Subscribe .footer-Subscribe-input button{
+        width: 100%;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+      #home .home-all {
+        flex-direction: column;
+        align-items: center;
+      }
+      #home .home-all .home-caption {
+        width: 100%;
+        text-align: center;
+      }
+      #home .home-all .home-image {
+        width: 100%;
+        margin-top: 30px;
+        order: -1;
+      }
+      #chefs .chefs-all .chefs-cards .chefs-cards-card {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      #gallery .gallery-all .gallery-photos {
+        flex-direction: column;
+        height: auto;
+      }
+      #gallery .gallery-all .gallery-photos .gallery-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #contact .contact-all .contact-details div {
+        width: 100%;
+      }
+      .footer .footer-all {
+        flex-direction: column;
+        text-align: left;
+      }
+      .footer .footer-all :is(.footer-about, .footer-contact) {
+        width: 100%;
+      }
+      .footer .footer-all .footer-Subscribe {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer .footer-all .footer-Subscribe .footer-Subscribe-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer-all .footer-Subscribe {
+        width: 100%;
+    }
+    .footer .footer-all .footer-Subscribe .footer-Subscribe-input button{
+        width: 100%;
+    }
+}
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    #home .home-all {
+        flex-direction: column;
+        align-items: center;
+      }
+      #home .home-all .home-caption{
+        width: 100%;
+        text-align: center;
+      }
+      #home .home-all .home-caption .home-caption-btn{
+        justify-content: center;
+      }
+      #home .home-all .home-image {
+        width: 100%;
+        margin-top: 30px;
+        order: -1;
+      }
+    #chefs .chefs-all .chefs-cards .chefs-cards-card {
+      width: calc(90% / 2);
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    #gallery .gallery-all{
+        max-width: 720px;
+    }
+    #gallery .gallery-all .gallery-photos{
+        height: 1405px;
+    }
+    #gallery .gallery-all .gallery-photos .gallery-item {
+        width: calc(calc(100% - 20px) / 2);
+    }
+       #gallery .gallery-all .gallery-photos .pizza {
+        order: 1;
+      }
+         #gallery .gallery-all .gallery-photos .fried {
+        order: 6;
+      }
+         #gallery .gallery-all .gallery-photos .omelette {
+        order: 4;
+      }
+         #gallery .gallery-all .gallery-photos .kofta {
+        order: 7;
+      }
+         #gallery .gallery-all .gallery-photos .burger {
+        order: 2;
+      }
+         #gallery .gallery-all .gallery-photos .pizza-slice {
+        order: 3;
+      }
+         #gallery .gallery-all .gallery-photos .steak {
+        order: 5;
+      }
+    #contact .contact-all .contact-details div {
+      width: 48%;
+    }
+    .footer .footer-all :is(.footer-about, .footer-contact) {
+      width: 45%;
+      order: -1;
+    }
+    .footer .footer-all .footer-Subscribe {
+      width: 100%;
+      order: 1;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    #home .home-all .home-caption {
+      width: 40%;
+    }
+    #home .home-all .home-image {
+      width: 40%;
+    }
+    #chefs .chefs-all .chefs-cards{
+        gap: 10px;
+    }
+    #chefs .chefs-all .chefs-cards .chefs-cards-card {
+      width: calc(90% / 3);
+
+    }
+    #gallery .gallery-all .gallery-photos .gallery-item {
+      width: calc(100% / 3);
+    }
+    .footer .footer-all :is(.footer-about, .footer-contact) {
+        width: 45%;
+        order: -1;
+      }
+      .footer .footer-all .footer-Subscribe {
+        width: 100%;
+        order: 1;
+      }
+  }
